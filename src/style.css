@@ -1,0 +1,116 @@
+.contentCV
+{
+    position: absolute ;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+#imagePers
+{
+    position: relative;
+    z-index: 1;
+    object-fit: contain;
+    clip-path: circle();
+    max-width: 23%;
+    float: left; 
+    overflow: hidden;
+    cursor: pointer !important;
+    filter: brightness(50%) contrast(90%) saturate(50%);
+    transition: filter 3s ease;
+}
+#imagePers:hover
+{
+    filter: brightness(120%) contrast(90%) saturate(150%);
+}
+.imageNom
+{
+    margin-left: 100px;
+}
+.about
+{
+    padding-left: 10px;
+}
+.texte
+{
+    position: relative;
+    left: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.texte p
+{
+    padding: 10px;
+    margin-right: 20px;
+}
+.categorie
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.cate
+{
+    /* position: absolute; */
+    /* left: -20px !important; */
+    padding: 50px 25px 50px 25px !important;
+    clip-path: circle();
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.cate:hover
+{
+    transform: scale(1.1);
+}
+.foot
+{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(100deg,#37214d,#f19419,#36bbf5) ;
+    width: 103%;
+    height: 100px;
+    margin: -20px;
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+}
+.nav
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    margin-left: 340px;
+    padding-bottom: 65px;
+    list-style: none;
+    color: #37214d;
+}
+.nav a
+{
+    padding-right: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.nav li
+{
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+
+}
+.nav li:hover
+{
+    color: #f19419;
+    border-bottom: 5px solid #f19419;
+}
+.scroll-animation {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.scroll-animation.show {
+    opacity: 1;
+}

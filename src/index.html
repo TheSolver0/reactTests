@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cv</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $(window).scroll(function() {
+        $(".scroll-animation").each(function() {
+        var windowHeight = $(window).height();
+        var windowTopPosition = $(window).scrollTop();
+        var windowBottomPosition = (windowTopPosition + windowHeight);
+
+        var elementHeight = $(this).outerHeight();
+        var elementTopPosition = $(this).offset().top;
+        var elementBottomPosition = (elementTopPosition + elementHeight);
+
+        // Vérifie si l'élément est dans la fenêtre visible
+        if ((elementBottomPosition >= windowTopPosition) &&
+            (elementTopPosition <= windowBottomPosition)) {
+            $(this).addClass("visible");
+        } else {
+            $(this).removeClass("visible");
+        }
+        });
+    });
+    });
+    </script>
+</head>
+<body>
+
+
+    <!-- <div class="scroll-animation"> -->
+        <div class="container">
+        <div class="imageNom">
+            <span style="font-size: 24px; font-weight: bold;">Luc FOTSO</span>
+            <br>
+            <span>Fullstack developer</span>
+        </div>
+        <header>
+                <ul class="nav">
+                <a href="#"><li style="color:#f19419;border-bottom: 5px solid #f19419;">HOME</li></a>
+                <a href="#"><li>RESEAU</li></a>
+                <a href="#"><li>CONTACT</li></a>
+            </ul>
+        </header>
+        <div class="about">
+            <img src="Images/1.jpg" alt="img" id="imagePers">
+            <div class="texte">
+                <h1>Hello,</h1>
+                <h3>a bit about me:</h3>
+                <div class="categorie">
+                    <div class="cate" style="background: #37214d;">
+                        <span>MY RESUME</span>
+                    </div>
+                    <div class="cate" style="background: #f19419;">
+                        <span>MY WORK</span>
+                    </div>
+                    <div class="cate" style="background: #36bbf5;">
+                        <span>MY SKILLS</span>
+                    </div>
+                </div>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum obcaecati in, non maxime id consequuntur optio labore fugiat amet ipsam? Suscipit modi facilis asperiores nihil error libero consequatur odit veritatis.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum obcaecati in, non maxime id consequuntur optio labore fugiat amet ipsam? Suscipit modi facilis asperiores nihil error libero consequatur odit veritatis.
+                    Harum obcaecati in, non maxime id consequuntur optio labore fugiat amet ipsam? Suscipit modi facilis asperiores nihil error libero consequatur odit veritatis.
+                </p>
+            </div>           
+        </div>
+        <div class="foot">
+            <div class="call">
+                <ul>
+                Call
+                <li>T.123-456-7890</li>
+                    <li>F.123-456-7890</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <ul>
+                Contact
+                    <li>info@mysite.com</li>
+                </ul>
+            </div>
+            <div class="follow">
+                Follow me
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>  
+            <div class="copy">
+                &copy; 2024 by the_solver <br> Proudly created with the_solver.com 
+            </div>
+        </div>
+    </div>   
+    <!-- </div>    -->
+</body>
+</html>
