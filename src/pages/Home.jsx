@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import moi from '../assets/Images/1.jpg';
+
 
 const wrapperVariants = {
     hidden: {opacity:0, y:-100},
@@ -30,7 +32,7 @@ export function Home ()
             </ul>
         </header>
         <div className="about">
-            <img src="../src/assets/Images/1.jpg" alt="img" id="imagePers"/>
+            <img src={moi} alt="img" id="imagePers"/>
             <div className="texte">
                 <h1>Hello,</h1>
                 <h3>a bit about me:</h3>
