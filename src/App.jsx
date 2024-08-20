@@ -41,7 +41,7 @@ const router = createBrowserRouter(
                path: '',
                element: <ExoBlog />,
                loader: () => {
-                 const posts = fetch('https:jsonplaceholder.typicode.com/posts?_limit=10&_delay=2000')
+                 const posts = fetch('https://jsonplaceholder.typicode.com/posts?_limit=10&_delay=2000')
                                .then(r => r.json())
                  return defer(
                    {
