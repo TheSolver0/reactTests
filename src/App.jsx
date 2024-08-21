@@ -124,7 +124,7 @@ const router = createBrowserRouter(
            </div>
          </nav>
      </header>
-     <div className="container my-8 mx-3">
+     <div className="container">
        {state === 'loading' ? <Spinner/> : <Outlet/>}
        {/* <Outlet/> */}
      </div>
